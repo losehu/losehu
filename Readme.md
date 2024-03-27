@@ -4,7 +4,7 @@
 - 💻 I also use Python/C/C++
 - 💗 If my project has been helpful to you, you can click the link below to donate me a cup of coffee. **[Here](https://losehu.github.io/payment-codes)**
 
-Thank you very much to everyone who has helped me! **[Details](https://losehu.github.io/sponsors)**
+Thank you very much to everyone who has helped me! **[Details]([https://losehu.github.io/sponsors](https://losehu.com/payment-codes/#%E6%89%93%E8%B5%8F%E5%90%8D%E5%8D%95))**
  
 
 
