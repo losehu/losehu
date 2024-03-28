@@ -1,0 +1,14 @@
+name: Issue Workflow
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  process_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Issue Title and Body
+        run: |
+          echo "New issue created:"
+          echo "Title: ${{ github.event.issue.title }}"
+          echo "Body: ${{ github.event.issue.body }}"
