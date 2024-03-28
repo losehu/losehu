@@ -7,57 +7,21 @@ jobs:
   process_issue:
     runs-on: ubuntu-latest
     steps:
-      # - name: Set up Python
-      #   uses: actions/setup-python@v2
-      #   with:
-      #     python-version: '3.x'
-  
-      # - name: Cache dependencies
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: ~/.cache/pip
-      #     key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-pip-
-
-
-      # - name: Install dependencies
-      #   run: |
-      #     sudo apt-get install python3-pil
-      #     python3 -m pip install Pillow==8.4.0
-      #     python3 -m pip install requests
-
-
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
       - name: robot
         if: ${{ github.event.issue.title == 'next step' }}
         run: |
-          # git config --global user.name "github-actions[bot]"
-          # git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # git clone https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git main
-          # cd main
           chmod +x draw
           ./draw ${{ github.event.issue.number }} "${{ github.event.issue.body }}" "${{ secrets.GH_TOKEN }}"
-          # git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
-          # git add .
-          # git commit -m "update"
-          # git push origin main --force
-
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "update"
           git push origin main --force
-        working-directory: ${{ github.workspace }}
-
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      # - name: delete issue
-      #   uses: vtcaregorodtcev/delete-issue@main
-      #   with:
-      #     github_token: ${{ secrets.GH_TOKEN }}
-      #     issue_node_id: ${{ github.event.issue.node_id }}
-
 
 
 
