@@ -35,6 +35,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git clone https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git main
           cd main
+          chmod +x draw
+
           ./draw
           # python3 draw.py ${{ github.event.issue.number }} "${{ github.event.issue.body }}" "${{ secrets.GH_TOKEN }}"
           git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
