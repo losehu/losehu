@@ -7,8 +7,60 @@ jobs:
   process_issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Issue Title and Body
+      # - name: Set up Python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: '3.x'
+  
+      # - name: Cache dependencies
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: ~/.cache/pip
+      #     key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-pip-
+
+
+      # - name: Install dependencies
+      #   run: |
+      #     sudo apt-get install python3-pil
+      #     python3 -m pip install Pillow==8.4.0
+      #     python3 -m pip install requests
+
+
+      - name: robot
+        if: ${{ github.event.issue.title == 'next step' }}
         run: |
-          echo "New issue created:"
-          echo "Title: ${{ github.event.issue.title }}"
-          echo "Body: ${{ github.event.issue.body }}"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git main
+          cd main
+          ./draw
+          # python3 draw.py ${{ github.event.issue.number }} "${{ github.event.issue.body }}" "${{ secrets.GH_TOKEN }}"
+          git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
+          git add .
+          git commit -m "update"
+          git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      # - name: delete issue
+      #   uses: vtcaregorodtcev/delete-issue@main
+      #   with:
+      #     github_token: ${{ secrets.GH_TOKEN }}
+      #     issue_node_id: ${{ github.event.issue.node_id }}
+
+
+
+
+      - name: Close issue
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            github.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number:  ${{ github.event.issue.number }},
+              state: 'closed'
+            })
