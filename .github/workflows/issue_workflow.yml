@@ -47,6 +47,8 @@ jobs:
           git add .
           git commit -m "update"
           git push origin main --force
+        working-directory: ${{ github.workspace }}
+
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
