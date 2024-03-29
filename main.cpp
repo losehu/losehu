@@ -309,6 +309,10 @@ std::vector<int> findLinesWithText(const std::string &filename, const std::strin
 }
 
 
+#include <iostream>
+#include <fstream>
+#include <vector>
+
 bool overwriteLine(const std::string &filename, int lineNumber, const char *content) {
     std::fstream file(filename);
     std::string line;
@@ -342,7 +346,7 @@ bool overwriteLine(const std::string &filename, int lineNumber, const char *cont
         return false;
     }
 
-    for (const auto &l: lines) {
+    for (const auto &l : lines) {
         file << l << std::endl;
     }
 
@@ -442,7 +446,7 @@ int main(int argc, char *argv[]) {
     }
     flashboard();
     char str[50];
-    sprintf(str,"score: **%lld**\n", totalScore());
+    sprintf(str,"score: **%lld**", totalScore());
     overwriteLine(filename, start_line-1, str);
     return 0;
 }

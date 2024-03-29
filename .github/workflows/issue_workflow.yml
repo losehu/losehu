@@ -32,7 +32,7 @@ jobs:
           ./2048 "${{ github.event.issue.body }}" 
           git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
           git add .
-          git commit -m "${ISSUE_TITLE} by ${ISSUE_AUTHOR}"
+          git commit -m "${{ github.event.issue.body }} by ${{ github.event.issue.user.login }}"
           git push origin 2048 --force
         working-directory: ${{ github.workspace }}
         env:
