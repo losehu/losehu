@@ -357,15 +357,15 @@ void READboard() {
     for (int i = 0; i < start_line + 1; i++) {
         std::getline(file, line);
     }
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 4; ++i) {
         std::getline(file, line);
         if (i == 1)std::getline(file, line);
         cout<<line<<endl;
         for (int j = 0; j < 4; j++) {
             if (line[18 + j * 42] == 'b') {
-                board[i>=1?i-1:i][j] = 0;
+                board[i][j] = 0;
             } else {
-                board[i>=1?i-1:i][j] = 2<<(10* (line[21 + j * 42] - '0') +  (line[22 + j * 42] - '0')-1);
+                board[i][j] = 2<<(10* (line[21 + j * 42] - '0') +  (line[22 + j * 42] - '0')-1);
             }
         }
 
