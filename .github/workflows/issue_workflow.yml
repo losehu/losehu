@@ -6,7 +6,7 @@ on:
 jobs:
   process_issue:
     if: ${{ github.event.issue.title == 'next step' }}
-    runs-on: namespace-profile-default
+    runs-on: ubuntu-latest
     steps:
       - name: Close issue
         id: close_issue
