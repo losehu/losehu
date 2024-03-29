@@ -5,6 +5,7 @@ on:
 
 jobs:
   process_issue:
+    if: ${{ github.event.issue.title == 'next step' }}
     runs-on: ubuntu-latest
     steps:
       - name: Close issue
@@ -20,12 +21,7 @@ jobs:
               state: 'closed'
             })
 
-  robot_job:
-    runs-on: ubuntu-latest
-    needs: process_issue
-    steps:
       - name: robot
-        if: ${{ github.event.issue.title == 'next step' }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
