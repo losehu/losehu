@@ -1,6 +1,7 @@
 ### Readme 2048 Game!
 
-Click the links to submit an **issue** and start playing.
+* Each step takes approximately 10 seconds to complete.
+* Click the links to submit an **issue** and start playing.
 
 <!-- BEGIN CLICK-->
 
