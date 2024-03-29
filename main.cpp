@@ -441,5 +441,8 @@ int main(int argc, char *argv[]) {
         initialize();
     }
     flashboard();
+    char str[50];
+    sprintf(str,"score: **%lld**\n", totalScore());
+    overwriteLine(filename, start_line-1, str);
     return 0;
 }
