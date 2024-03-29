@@ -26,7 +26,17 @@ jobs:
       #     sudo apt-get install python3-pil
       #     python3 -m pip install Pillow==8.4.0
       #     python3 -m pip install requests
-
+      - name: Close issue
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            github.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number:  ${{ github.event.issue.number }},
+              state: 'closed'
+            })
 
       - name: robot
         if: ${{ github.event.issue.title == 'next step' }}
@@ -57,14 +67,3 @@ jobs:
 
 
 
-      - name: Close issue
-        uses: actions/github-script@v3
-        with:
-          github-token: ${{ secrets.GH_TOKEN }}
-          script: |
-            github.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number:  ${{ github.event.issue.number }},
-              state: 'closed'
-            })
