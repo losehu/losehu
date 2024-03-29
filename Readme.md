@@ -14,14 +14,14 @@ Click the links to submit an **issue** and start playing.
 
 <!-- END CLICK -->
 
-score: **20**
+score: **24**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> |
-| <img src="./img/blank.svg" width=100px> | <img src="./img/00002.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> |
-| <img src="./img/blank.svg" width=100px> | <img src="./img/00003.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00003.svg" width=100px> |
+| <img src="./img/blank.svg" width=100px> | <img src="./img/00002.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00002.svg" width=100px> |
+| <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00004.svg" width=100px> |
 
 <!-- END CHESS BOARD -->
 
