@@ -15,14 +15,14 @@
 
 <!-- END CLICK -->
 
-score: **120**
+score: **124**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
-| <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00004.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00006.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00004.png" width=100px> |
+| <img src="./img/00002.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00006.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
