@@ -192,9 +192,9 @@ def update_readme():
                 elif c=='2':
                     lines[i-2] = "**White's** turn now.\n"
                 elif  c=='3':
-                    lines[i-2] = "**Black's** WIN!."
+                    lines[i-2] = "**Black's** WIN!.\n"
                 elif  c=='4':
-                    lines[i-2] = "**White's** WIN!."
+                    lines[i-2] = "**White's** WIN!.\n"
                 lines[i+1]="![chessboard](./"+random_string+".png)"
                 break
         file.seek(0)
@@ -210,10 +210,9 @@ def del_pic():
 
 # 写一个main
 if __name__ == '__main__':
-    #随机生成长度为8的字符串
-    random_string = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
-    del_pic()
-
+    # #随机生成长度为8的字符串
+    # random_string = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+    # del_pic()
     # board_image, draw = create_chessboard()# 创建空白棋盘
     # board_image.save(random_string+".png")# 保存棋盘图像
     # update_readme()
@@ -229,6 +228,11 @@ if __name__ == '__main__':
     if row>15 or col>15:
         comment_on_issue( sys.argv[1], "out of range(1~15)", sys.argv[3])
         sys.exit()  # 退出程序
+
+
+    #随机生成长度为8的字符串
+    random_string = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+    del_pic()
 
     board_image=Image.open("chessboard_empty.png")
     draw=ImageDraw.Draw(board_image)

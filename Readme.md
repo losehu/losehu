@@ -16,4 +16,4 @@ This is a multiplayer Gomoku game implemented via GitHub profile README
 **Black's** turn now.
 
 <!-- flag -->
-![chessboard](./bAfkaIVN.png)
+![chessboard](./HgaMg4l3.png)
