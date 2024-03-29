@@ -18,11 +18,11 @@
 score: **56**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.svg" width=100px> | <img src="./img/00001.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00002.svg" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00001.svg" width=100px> | <img src="./img/00002.svg" width=100px> |
-| <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00003.svg" width=100px> | <img src="./img/00003.svg" width=100px> |
-| <img src="./img/blank.svg" width=100px> | <img src="./img/00003.svg" width=100px> | <img src="./img/00004.svg" width=100px> | <img src="./img/00002.svg" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00003.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00002.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 

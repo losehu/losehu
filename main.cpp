@@ -84,7 +84,7 @@ void flashboard() {
     // 覆盖第n行的内容为char数组
     int now_line = start_line + 2;
     for (int k = 0; k < 4; ++k) {
-        char newContent[170] = "| <img src=\"./img/blank.svg\" width=100px> | <img src=\"./img/blank.svg\" width=100px> | <img src=\"./img/blank.svg\" width=100px> | <img src=\"./img/blank.svg\" width=100px> |";
+        char newContent[170] = "| <img src=\"./img/blank.png\" width=100px> | <img src=\"./img/blank.png\" width=100px> | <img src=\"./img/blank.png\" width=100px> | <img src=\"./img/blank.png\" width=100px> |";
 
         for (int l = 0; l < 4; ++l) {
             if (board[k][l] == 0) {
