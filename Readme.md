@@ -15,14 +15,14 @@
 
 <!-- END CLICK -->
 
-score: **28**
+score: **32**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> |
 | <img src="./img/blank.svg" width=100px> | <img src="./img/00002.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00003.svg" width=100px> |
-| <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00004.svg" width=100px> |
+| <img src="./img/blank.svg" width=100px> | <img src="./img/00002.svg" width=100px> | <img src="./img/blank.svg" width=100px> | <img src="./img/00004.svg" width=100px> |
 
 <!-- END CHESS BOARD -->
 
