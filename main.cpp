@@ -384,6 +384,7 @@ void READboard() {
 
 
 int main(int argc, char *argv[]) {
+    srand(time(NULL));
 
     if (argc != 2) {
         printf("error num %d \n", argv[0]);
