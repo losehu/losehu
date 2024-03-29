@@ -13,7 +13,7 @@
 #include "string.h"
 
 using namespace std;
-const std::string filename = "../Readme.md";
+const std::string filename = "./Readme.md";
 
 
 #define SIZE 4
@@ -71,7 +71,7 @@ long long int getPowerOfTwo(long long int n) {
 bool overwriteLine(const std::string &filename, int lineNumber, const char *content);
 
 // 打印游戏面板
-void printBoard() {
+void flashboard() {
     long long int i, j;
     for (i = 0; i < SIZE; ++i) {
         for (j = 0; j < SIZE; ++j) {
@@ -82,31 +82,30 @@ void printBoard() {
 
 
     // 覆盖第n行的内容为char数组
-    int now_line = start_line + 1;
+    int now_line = start_line + 2;
     for (int k = 0; k < 4; ++k) {
-        char newContent[160] = "<div class=\"grid-item\"><img src=\"./img/00001.svg\" alt=\"Image 1\"></div>";
+        char newContent[170] = "| <img src=\"./img/blank.svg\" width=100px> | <img src=\"./img/blank.svg\" width=100px> | <img src=\"./img/blank.svg\" width=100px> | <img src=\"./img/blank.svg\" width=100px> |";
 
         for (int l = 0; l < 4; ++l) {
             if (board[k][l] == 0) {
-                newContent[39] = 'b';
-                newContent[40] = 'l';
-                newContent[41] = 'a';
-                newContent[42] = 'n';
-                newContent[43] = 'k';
-
+                newContent[18 + l * 42] = 'b';
+                newContent[19 + l * 42] = 'l';
+                newContent[20 + l * 42] = 'a';
+                newContent[21 + l * 42] = 'n';
+                newContent[22 + l * 42] = 'k';
             } else {
-
-                newContent[39] = '0';
-                newContent[40] = '0';
-                newContent[41] = '0';
-                newContent[42] = '0' + getPowerOfTwo(board[k][l]) / 10;
-                newContent[43] = '0' + getPowerOfTwo(board[k][l]) % 10;
+                newContent[18 + l * 42] = '0';
+                newContent[19 + l * 42] = '0';
+                newContent[20 + l * 42] = '0';
+                newContent[21 + l * 42] = '0' + getPowerOfTwo(board[k][l]) / 10;
+                newContent[22 + l * 42] = '0' + getPowerOfTwo(board[k][l]) % 10;
             }
-            overwriteLine(filename, now_line, newContent);
-            now_line++;
+
 
         }
-
+        overwriteLine(filename, now_line, newContent);
+        if (k == 0) now_line += 2;
+        else now_line += 1;
 
     }
 
@@ -350,6 +349,35 @@ bool overwriteLine(const std::string &filename, int lineNumber, const char *cont
     return true;
 }
 
+void READboard() {
+    std::ifstream file(filename);
+    std::vector<int> lines;
+    std::string line;
+
+    for (int i = 0; i < start_line + 1; i++) {
+        std::getline(file, line);
+    }
+    for (int i = 0; i < 5; ++i) {
+        std::getline(file, line);
+        if (i == 1)std::getline(file, line);
+        cout<<line<<endl;
+        for (int j = 0; j < 4; j++) {
+            if (line[18 + j * 42] == 'b') {
+                board[i>=1?i-1:i][j] = 0;
+            } else {
+                board[i>=1?i-1:i][j] = 2<<(10* (line[21 + j * 42] - '0') +  (line[22 + j * 42] - '0')-1);
+            }
+        }
+
+    }
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j <4 ; ++j) {
+            printf("%d ",board[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 
 int main(int argc, char *argv[]) {
 
@@ -375,8 +403,7 @@ int main(int argc, char *argv[]) {
     }
 
 
-    const std::string searchText = "<div class=\"grid-container\">";
-    const char *newContent = "This line is overwritten.";
+    const std::string searchText = "<!-- BEGIN CHESS BOARD -->";
 
     // 查找特定字符串所在的行号
     std::vector<int> lines = findLinesWithText(filename, searchText);
@@ -386,10 +413,10 @@ int main(int argc, char *argv[]) {
     }
     std::cout << std::endl;
     start_line = lines[0];
-    bool gameover = false;
-    initialize();
+
     printf("score %d\n", totalScore());
-    printBoard();
+    READboard();
+
     bool state = false;
     switch (input) {
         case 8:
@@ -411,8 +438,8 @@ int main(int argc, char *argv[]) {
     }
     if (!state && (input == 8 || input == 2 || input == 4 || input == 6) && isGameOver()) {
         printf("Game Over!\n");
-        gameover = true;
         initialize();
     }
+    flashboard();
     return 0;
 }
