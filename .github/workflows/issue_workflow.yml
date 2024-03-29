@@ -3,58 +3,34 @@ on:
   issues:
     types: [opened]
 
-
-
 jobs:
-  move:
-    permissions:
-      issues: write
-      contents: write
+  process_and_robot:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.title == 'next step' }}
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Close issue
+      - name: Close issue and perform robot action
         if: ${{ github.event.issue.title == 'next step' }}
-        id: close_issue
         uses: actions/github-script@v3
         with:
           github-token: ${{ secrets.GH_TOKEN }}
           script: |
+            // Close the issue
             github.issues.update({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number:  ${{ github.event.issue.number }},
               state: 'closed'
-            })
+            });
 
-
-      - name: robot
-        if: ${{ github.event.issue.title == 'next step' }}
-        run: |
-          # git config --global user.name "github-actions[bot]"
-          # git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # git clone https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git main
-          # cd main
-          chmod +x draw
-          ./draw ${{ github.event.issue.number }} "${{ github.event.issue.body }}" "${{ secrets.GH_TOKEN }}"
-          # git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
-          # git add .
-          # git commit -m "update"
-          # git push origin main --force
-        working-directory: ${{ github.workspace }}
+            // Run robot action
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git clone https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git main
+            cd main
+            chmod +x draw
+            ./draw ${{ github.event.issue.number }} "${{ github.event.issue.body }}" "${{ secrets.GH_TOKEN }}"
+            git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
+            git add .
+            git commit -m "update"
+            git push origin main --force
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Commit and push changes
-        env:
-          ISSUE_TITLE: ${{ github.event.issue.title }}
-          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "${ISSUE_TITLE} by ${ISSUE_AUTHOR}"
-          git push
