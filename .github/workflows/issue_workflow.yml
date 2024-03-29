@@ -5,7 +5,7 @@ on:
 
 jobs:
   process_issue:
-    if: ${{ github.event.issue.title == 'next step' }}
+    if: ${{ github.event.issue.title == '2048' }}
     runs-on: ubuntu-latest
     steps:
       - name: Close issue
@@ -27,12 +27,13 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git clone https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git main
           cd main
-          chmod +x draw
-          ./draw ${{ github.event.issue.number }} "${{ github.event.issue.body }}" "${{ secrets.GH_TOKEN }}"
+          git checkout 2048
+          chmod +x 2048
+          ./2048 "${{ github.event.issue.body }}" 
           git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
           git add .
           git commit -m "${ISSUE_TITLE} by ${ISSUE_AUTHOR}"
-          git push origin main --force
+          git push origin 2048 --force
         working-directory: ${{ github.workspace }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
