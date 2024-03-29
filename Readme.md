@@ -16,6 +16,7 @@ Click the links to submit an **issue** and start playing.
 
 
 <!-- BEGIN CHESS BOARD -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,3 +72,10 @@ Click the links to submit an **issue** and start playing.
 
 
 
+
+
+|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|
+|--|--|--|--|
+|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|
+|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|
+|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|<img src="./img/blank.svg" alt="Image 1">|
