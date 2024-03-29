@@ -13,7 +13,7 @@ This is a multiplayer Gomoku game implemented via GitHub profile README
 
 * For example, to play at row 5 column 8, enter **"5 8"**.
 
-**Black's** turn now.
+**White's** turn now.
 
 <!-- flag -->
-![chessboard](./mZsIDFM9.png)
+![chessboard](./EkkLNYTz.png)
