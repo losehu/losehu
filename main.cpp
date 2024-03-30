@@ -13,29 +13,32 @@
 #include "string.h"
 
 using namespace std;
-const std::string filename = "./Readme.md";
-
+const std::string filename = "../Readme.md";
 
 #define SIZE 4
 
 long long int board[SIZE][SIZE];
 int start_line = 0;
 
-// ³õÊ¼»¯ÓÎÏ·Ãæ°å
-void initialize() {
+// åˆå§‹åŒ–æ¸¸æˆé¢æ¿
+void initialize()
+{
     long long int i, j;
-    for (i = 0; i < SIZE; ++i) {
-        for (j = 0; j < SIZE; ++j) {
+    for (i = 0; i < SIZE; ++i)
+    {
+        for (j = 0; j < SIZE; ++j)
+        {
             board[i][j] = 0;
         }
     }
-    // Ëæ»úÉú³ÉÁ½¸ö³õÊ¼Êı×Ö
+    // éšæœºç”Ÿæˆä¸¤ä¸ªåˆå§‹æ•°å­—
     srand(time(NULL));
     long long int r1 = rand() % SIZE;
     long long int c1 = rand() % SIZE;
     long long int r2 = rand() % SIZE;
     long long int c2 = rand() % SIZE;
-    while (r1 == r2 && c1 == c2) {
+    while (r1 == r2 && c1 == c2)
+    {
         r2 = rand() % SIZE;
         c2 = rand() % SIZE;
     }
@@ -43,100 +46,118 @@ void initialize() {
     board[r2][c2] = 2;
 }
 
-// ÔÚËæ»ú¿Õ°×Î»ÖÃÉú³ÉÒ»¸öĞÂÊı×Ö2»ò4
-void generateNewNumber() {
+// åœ¨éšæœºç©ºç™½ä½ç½®ç”Ÿæˆä¸€ä¸ªæ–°æ•°å­—2æˆ–4
+void generateNewNumber()
+{
     long long int r, c;
-    long long int newNumber = (rand() % 2 + 1) * 2; // Éú³É2»ò4
-    do {
+    long long int newNumber = (rand() % 2 + 1) * 2; // ç”Ÿæˆ2æˆ–4
+    do
+    {
         r = rand() % SIZE;
         c = rand() % SIZE;
     } while (board[r][c] != 0);
     board[r][c] = newNumber;
 }
 
-long long int getPowerOfTwo(long long int n) {
+long long int getPowerOfTwo(long long int n)
+{
     long long int count = 0;
 
-    // Èç¹ûÒ»¸öÊıÊÇ2µÄÃİ´Î·½£¬ÔòÆä¶ş½øÖÆ±íÊ¾ÖĞÖ»ÓĞÒ»Î»ÊÇ1£¬ÆäÓàÎ»¶¼ÊÇ0
-    // Í³¼Æ¸ÃÊı¶ş½øÖÆ±íÊ¾ÖĞ1µÄ¸öÊı¼´ÎªÆäÃİ´Î·½Êı
-    while (n > 0) {
+    // å¦‚æœä¸€ä¸ªæ•°æ˜¯2çš„å¹‚æ¬¡æ–¹ï¼Œåˆ™å…¶äºŒè¿›åˆ¶è¡¨ç¤ºä¸­åªæœ‰ä¸€ä½æ˜¯1ï¼Œå…¶ä½™ä½éƒ½æ˜¯0
+    // ç»Ÿè®¡è¯¥æ•°äºŒè¿›åˆ¶è¡¨ç¤ºä¸­1çš„ä¸ªæ•°å³ä¸ºå…¶å¹‚æ¬¡æ–¹æ•°
+    while (n > 0)
+    {
 
         count++;
-        n >>= 1; // ÓÒÒÆÒ»Î»£¬Ïàµ±ÓÚ³ıÒÔ2
+        n >>= 1; // å³ç§»ä¸€ä½ï¼Œç›¸å½“äºé™¤ä»¥2
     }
 
-    return count - 1; // ¼õ1ÊÇÒòÎª×îºóÒ»´ÎÓÒÒÆµÃµ½µÄÊÇ0£¬¶ÔÓ¦×Å2^0£¬¶ø²»ÊÇ2^1
+    return count - 1; // å‡1æ˜¯å› ä¸ºæœ€åä¸€æ¬¡å³ç§»å¾—åˆ°çš„æ˜¯0ï¼Œå¯¹åº”ç€2^0ï¼Œè€Œä¸æ˜¯2^1
 }
 
 bool overwriteLine(const std::string &filename, int lineNumber, const char *content);
 
-// ´òÓ¡ÓÎÏ·Ãæ°å
-void flashboard() {
+// æ‰“å°æ¸¸æˆé¢æ¿
+void flashboard()
+{
     long long int i, j;
-    for (i = 0; i < SIZE; ++i) {
-        for (j = 0; j < SIZE; ++j) {
+    for (i = 0; i < SIZE; ++i)
+    {
+        for (j = 0; j < SIZE; ++j)
+        {
             printf("%4d", board[i][j]);
         }
         printf("\n");
     }
 
-
-    // ¸²¸ÇµÚnĞĞµÄÄÚÈİÎªcharÊı×é
+    // è¦†ç›–ç¬¬nè¡Œçš„å†…å®¹ä¸ºcharæ•°ç»„
     int now_line = start_line + 2;
-    for (int k = 0; k < 4; ++k) {
+    for (int k = 0; k < 4; ++k)
+    {
         char newContent[170] = "| <img src=\"./img/blank.png\" width=100px> | <img src=\"./img/blank.png\" width=100px> | <img src=\"./img/blank.png\" width=100px> | <img src=\"./img/blank.png\" width=100px> |";
 
-        for (int l = 0; l < 4; ++l) {
-            if (board[k][l] == 0) {
+        for (int l = 0; l < 4; ++l)
+        {
+            if (board[k][l] == 0)
+            {
                 newContent[18 + l * 42] = 'b';
                 newContent[19 + l * 42] = 'l';
                 newContent[20 + l * 42] = 'a';
                 newContent[21 + l * 42] = 'n';
                 newContent[22 + l * 42] = 'k';
-            } else {
+            }
+            else
+            {
                 newContent[18 + l * 42] = '0';
                 newContent[19 + l * 42] = '0';
                 newContent[20 + l * 42] = '0';
                 newContent[21 + l * 42] = '0' + getPowerOfTwo(board[k][l]) / 10;
                 newContent[22 + l * 42] = '0' + getPowerOfTwo(board[k][l]) % 10;
             }
-
-
         }
         overwriteLine(filename, now_line, newContent);
-        if (k == 0) now_line += 2;
-        else now_line += 1;
-
+        if (k == 0)
+            now_line += 2;
+        else
+            now_line += 1;
     }
-
 }
 
-bool moveUp() {
+bool moveUp()
+{
     long long int i, j, k;
-    // ÖğÁĞ´¦Àí
+    // é€åˆ—å¤„ç†
     bool move = false;
 
-    for (j = 0; j < SIZE; ++j) {
-        // ÏÈ°ÑËùÓĞÊı×Ö·½¿éÍùÉÏÒÆ¶¯
-        for (i = 1; i < SIZE; ++i) {
-            if (board[i][j] != 0) {
-                // ÕÒµ½ÉÏÃæµÚÒ»¸ö·Ç¿Õ¸ñ
-                for (k = i - 1; k >= 0; --k) {
-                    if (board[k][j] == 0) {
-                        // ÒÆ¶¯Êı×Ö·½¿é
+    for (j = 0; j < SIZE; ++j)
+    {
+        // å…ˆæŠŠæ‰€æœ‰æ•°å­—æ–¹å—å¾€ä¸Šç§»åŠ¨
+        for (i = 1; i < SIZE; ++i)
+        {
+            if (board[i][j] != 0)
+            {
+                // æ‰¾åˆ°ä¸Šé¢ç¬¬ä¸€ä¸ªéç©ºæ ¼
+                for (k = i - 1; k >= 0; --k)
+                {
+                    if (board[k][j] == 0)
+                    {
+                        // ç§»åŠ¨æ•°å­—æ–¹å—
                         board[k][j] = board[k + 1][j];
                         board[k + 1][j] = 0;
                         move = true;
-
-                    } else if (board[k][j] == board[k + 1][j]) {
-                        // ºÏ²¢ÏàÍ¬Êı×Ö·½¿é
+                    }
+                    else if (board[k][j] == board[k + 1][j])
+                    {
+                        // åˆå¹¶ç›¸åŒæ•°å­—æ–¹å—
                         board[k][j] *= 2;
                         board[k + 1][j] = 0;
                         move = true;
 
                         break;
-                    } else {
-                        // ²»ÄÜºÏ²¢£¬ÍË³öÑ­»·
+                    }
+                    else
+                    {
+                        // ä¸èƒ½åˆå¹¶ï¼Œé€€å‡ºå¾ªç¯
                         break;
                     }
                 }
@@ -145,35 +166,46 @@ bool moveUp() {
     }
     generateNewNumber();
 
-    if (!move)return false;
+    if (!move)
+        return false;
 }
 
-// ÏòÏÂÒÆ¶¯
-bool moveDown() {
+// å‘ä¸‹ç§»åŠ¨
+bool moveDown()
+{
     long long int i, j, k;
     bool move = false;
-    // ÖğÁĞ´¦Àí
+    // é€åˆ—å¤„ç†
 
-    for (j = 0; j < SIZE; ++j) {
-        // ÏÈ°ÑËùÓĞÊı×Ö·½¿éÍùÏÂÒÆ¶¯
-        for (i = SIZE - 2; i >= 0; --i) {
-            if (board[i][j] != 0) {
-                // ÕÒµ½ÏÂÃæµÚÒ»¸ö·Ç¿Õ¸ñ
-                for (k = i + 1; k < SIZE; ++k) {
-                    if (board[k][j] == 0) {
-                        // ÒÆ¶¯Êı×Ö·½¿é
+    for (j = 0; j < SIZE; ++j)
+    {
+        // å…ˆæŠŠæ‰€æœ‰æ•°å­—æ–¹å—å¾€ä¸‹ç§»åŠ¨
+        for (i = SIZE - 2; i >= 0; --i)
+        {
+            if (board[i][j] != 0)
+            {
+                // æ‰¾åˆ°ä¸‹é¢ç¬¬ä¸€ä¸ªéç©ºæ ¼
+                for (k = i + 1; k < SIZE; ++k)
+                {
+                    if (board[k][j] == 0)
+                    {
+                        // ç§»åŠ¨æ•°å­—æ–¹å—
                         board[k][j] = board[k - 1][j];
                         board[k - 1][j] = 0;
                         move = true;
-                    } else if (board[k][j] == board[k - 1][j]) {
-                        // ºÏ²¢ÏàÍ¬Êı×Ö·½¿é
+                    }
+                    else if (board[k][j] == board[k - 1][j])
+                    {
+                        // åˆå¹¶ç›¸åŒæ•°å­—æ–¹å—
                         board[k][j] *= 2;
                         board[k - 1][j] = 0;
                         move = true;
 
                         break;
-                    } else {
-                        // ²»ÄÜºÏ²¢£¬ÍË³öÑ­»·
+                    }
+                    else
+                    {
+                        // ä¸èƒ½åˆå¹¶ï¼Œé€€å‡ºå¾ªç¯
                         break;
                     }
                 }
@@ -182,36 +214,46 @@ bool moveDown() {
     }
     generateNewNumber();
 
-    if (!move) return false;
-
+    if (!move)
+        return false;
 }
 
-// Ïò×óÒÆ¶¯
-bool moveLeft() {
+// å‘å·¦ç§»åŠ¨
+bool moveLeft()
+{
     long long int i, j, k;
     bool move = false;
 
-    // ÖğĞĞ´¦Àí
-    for (i = 0; i < SIZE; ++i) {
-        // ÏÈ°ÑËùÓĞÊı×Ö·½¿éÍù×óÒÆ¶¯
-        for (j = 1; j < SIZE; ++j) {
-            if (board[i][j] != 0) {
-                // ÕÒµ½×ó±ßµÚÒ»¸ö·Ç¿Õ¸ñ
-                for (k = j - 1; k >= 0; --k) {
-                    if (board[i][k] == 0) {
-                        // ÒÆ¶¯Êı×Ö·½¿é
+    // é€è¡Œå¤„ç†
+    for (i = 0; i < SIZE; ++i)
+    {
+        // å…ˆæŠŠæ‰€æœ‰æ•°å­—æ–¹å—å¾€å·¦ç§»åŠ¨
+        for (j = 1; j < SIZE; ++j)
+        {
+            if (board[i][j] != 0)
+            {
+                // æ‰¾åˆ°å·¦è¾¹ç¬¬ä¸€ä¸ªéç©ºæ ¼
+                for (k = j - 1; k >= 0; --k)
+                {
+                    if (board[i][k] == 0)
+                    {
+                        // ç§»åŠ¨æ•°å­—æ–¹å—
                         board[i][k] = board[i][k + 1];
                         board[i][k + 1] = 0;
                         move = true;
-                    } else if (board[i][k] == board[i][k + 1]) {
-                        // ºÏ²¢ÏàÍ¬Êı×Ö·½¿é
+                    }
+                    else if (board[i][k] == board[i][k + 1])
+                    {
+                        // åˆå¹¶ç›¸åŒæ•°å­—æ–¹å—
                         board[i][k] *= 2;
                         board[i][k + 1] = 0;
                         move = true;
 
                         break;
-                    } else {
-                        // ²»ÄÜºÏ²¢£¬ÍË³öÑ­»·
+                    }
+                    else
+                    {
+                        // ä¸èƒ½åˆå¹¶ï¼Œé€€å‡ºå¾ªç¯
                         break;
                     }
                 }
@@ -220,36 +262,46 @@ bool moveLeft() {
     }
     generateNewNumber();
 
-    if (!move)return false;
-
+    if (!move)
+        return false;
 }
 
-// ÏòÓÒÒÆ¶¯
-bool moveRight() {
+// å‘å³ç§»åŠ¨
+bool moveRight()
+{
     long long int i, j, k;
     bool move = false;
 
-    // ÖğĞĞ´¦Àí
-    for (i = 0; i < SIZE; ++i) {
-        // ÏÈ°ÑËùÓĞÊı×Ö·½¿éÍùÓÒÒÆ¶¯
-        for (j = SIZE - 2; j >= 0; --j) {
-            if (board[i][j] != 0) {
-                // ÕÒµ½ÓÒ±ßµÚÒ»¸ö·Ç¿Õ¸ñ
-                for (k = j + 1; k < SIZE; ++k) {
-                    if (board[i][k] == 0) {
-                        // ÒÆ¶¯Êı×Ö·½¿é
+    // é€è¡Œå¤„ç†
+    for (i = 0; i < SIZE; ++i)
+    {
+        // å…ˆæŠŠæ‰€æœ‰æ•°å­—æ–¹å—å¾€å³ç§»åŠ¨
+        for (j = SIZE - 2; j >= 0; --j)
+        {
+            if (board[i][j] != 0)
+            {
+                // æ‰¾åˆ°å³è¾¹ç¬¬ä¸€ä¸ªéç©ºæ ¼
+                for (k = j + 1; k < SIZE; ++k)
+                {
+                    if (board[i][k] == 0)
+                    {
+                        // ç§»åŠ¨æ•°å­—æ–¹å—
                         board[i][k] = board[i][k - 1];
                         board[i][k - 1] = 0;
                         move = true;
-                    } else if (board[i][k] == board[i][k - 1]) {
-                        // ºÏ²¢ÏàÍ¬Êı×Ö·½¿é
+                    }
+                    else if (board[i][k] == board[i][k - 1])
+                    {
+                        // åˆå¹¶ç›¸åŒæ•°å­—æ–¹å—
                         board[i][k] *= 2;
                         board[i][k - 1] = 0;
                         move = true;
 
                         break;
-                    } else {
-                        // ²»ÄÜºÏ²¢£¬ÍË³öÑ­»·
+                    }
+                    else
+                    {
+                        // ä¸èƒ½åˆå¹¶ï¼Œé€€å‡ºå¾ªç¯
 
                         break;
                     }
@@ -259,47 +311,57 @@ bool moveRight() {
     }
     generateNewNumber();
 
-    if (!move)return false;
-
+    if (!move)
+        return false;
 }
 
-// ¼ì²éÓÎÏ·ÊÇ·ñ½áÊø
-bool isGameOver() {
+// æ£€æŸ¥æ¸¸æˆæ˜¯å¦ç»“æŸ
+bool isGameOver()
+{
     long long int i, j;
 
-    // ¼ì²éÊÇ·ñÓĞ¿Õ¸ñ×Ó
-    for (i = 0; i < SIZE; ++i) {
-        for (j = 0; j < SIZE; ++j) {
-            if (board[i][j] == 0) {
-                return false; // »¹ÓĞ¿Õ¸ñ×Ó£¬ÓÎÏ·Î´½áÊø
+    // æ£€æŸ¥æ˜¯å¦æœ‰ç©ºæ ¼å­
+    for (i = 0; i < SIZE; ++i)
+    {
+        for (j = 0; j < SIZE; ++j)
+        {
+            if (board[i][j] == 0)
+            {
+                return false; // è¿˜æœ‰ç©ºæ ¼å­ï¼Œæ¸¸æˆæœªç»“æŸ
             }
         }
     }
 
-    return true; // ËùÓĞ¸ñ×Ó±»ÌîÂúÇÒ²»ÄÜÔÙºÏ²¢£¬ÓÎÏ·½áÊø
+    return true; // æ‰€æœ‰æ ¼å­è¢«å¡«æ»¡ä¸”ä¸èƒ½å†åˆå¹¶ï¼Œæ¸¸æˆç»“æŸ
 }
 
-//¼ÆËã×Ü·Ö
-long long int totalScore() {
+// è®¡ç®—æ€»åˆ†
+long long int totalScore()
+{
     long long int i, j;
     long long int score = 0;
-    for (i = 0; i < SIZE; ++i) {
-        for (j = 0; j < SIZE; ++j) {
+    for (i = 0; i < SIZE; ++i)
+    {
+        for (j = 0; j < SIZE; ++j)
+        {
             score += board[i][j];
         }
     }
     return score;
 }
 
-// ²éÕÒtxtÖĞÌØ¶¨×Ö·û´®ËùÔÚµÄĞĞºÅ
-std::vector<int> findLinesWithText(const std::string &filename, const std::string &searchText) {
+// æŸ¥æ‰¾txtä¸­ç‰¹å®šå­—ç¬¦ä¸²æ‰€åœ¨çš„è¡Œå·
+std::vector<int> findLinesWithText(const std::string &filename, const std::string &searchText)
+{
     std::ifstream file(filename);
     std::vector<int> lines;
     std::string line;
     int lineNumber = 1;
 
-    while (std::getline(file, line)) {
-        if (line.find(searchText) != std::string::npos) {
+    while (std::getline(file, line))
+    {
+        if (line.find(searchText) != std::string::npos)
+        {
             lines.push_back(lineNumber);
         }
         lineNumber++;
@@ -308,30 +370,33 @@ std::vector<int> findLinesWithText(const std::string &filename, const std::strin
     return lines;
 }
 
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 
-bool overwriteLine(const std::string &filename, int lineNumber, const char *content) {
+bool overwriteLine(const std::string &filename, int lineNumber, const char *content)
+{
     std::fstream file(filename);
     std::string line;
     std::vector<std::string> lines;
 
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         std::cerr << "Failed to open file: " << filename << std::endl;
         return false;
     }
 
     // Read all lines into memory
-    while (std::getline(file, line)) {
+    while (std::getline(file, line))
+    {
         lines.push_back(line);
     }
 
     file.close();
 
     // Check if lineNumber is valid
-    if (lineNumber < 1 || lineNumber > lines.size()) {
+    if (lineNumber < 1 || lineNumber > lines.size())
+    {
         std::cerr << "Line " << lineNumber << " does not exist in the file." << std::endl;
         return false;
     }
@@ -341,79 +406,239 @@ bool overwriteLine(const std::string &filename, int lineNumber, const char *cont
 
     // Rewrite the file with updated content
     file.open(filename, std::ios::out | std::ios::trunc);
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         std::cerr << "Failed to open file for writing: " << filename << std::endl;
         return false;
     }
 
-    for (const auto &l : lines) {
+    for (const auto &l : lines)
+    {
         file << l << std::endl;
     }
 
     return true;
 }
 
-void READboard() {
+void READboard()
+{
     std::ifstream file(filename);
     std::vector<int> lines;
     std::string line;
 
-    for (int i = 0; i < start_line + 1; i++) {
+    for (int i = 0; i < start_line + 1; i++)
+    {
         std::getline(file, line);
     }
-    for (int i = 0; i < 4; ++i) {
+    for (int i = 0; i < 4; ++i)
+    {
         std::getline(file, line);
-        if (i == 1)std::getline(file, line);
-        cout<<line<<endl;
-        for (int j = 0; j < 4; j++) {
-            if (line[18 + j * 42] == 'b') {
+        if (i == 1)
+            std::getline(file, line);
+        cout << line << endl;
+        for (int j = 0; j < 4; j++)
+        {
+            if (line[18 + j * 42] == 'b')
+            {
                 board[i][j] = 0;
-            } else {
-                board[i][j] = 2<<(10* (line[21 + j * 42] - '0') +  (line[22 + j * 42] - '0')-1);
+            }
+            else
+            {
+                board[i][j] = 2 << (10 * (line[21 + j * 42] - '0') + (line[22 + j * 42] - '0') - 1);
             }
         }
-
     }
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j <4 ; ++j) {
-            printf("%d ",board[i][j]);
+    for (int i = 0; i < 4; ++i)
+    {
+        for (int j = 0; j < 4; ++j)
+        {
+            printf("%d ", board[i][j]);
         }
         printf("\n");
     }
 }
+int find_name(string name)
+{
+    std::vector<int> lines1 = findLinesWithText(filename, name);
+    if (lines1.size() == 0)
+        return 0;
+    else
+        return lines1[0];
+}
 
+std::string readTxtLine(const std::string &filename, int row)
+{
+    std::ifstream file(filename);
+    std::string line;
+    int currentRow = 0;
 
-int main(int argc, char *argv[]) {
+    while (std::getline(file, line))
+    {
+        currentRow++;
+
+        if (currentRow == row)
+        {
+            return line;
+        }
+    }
+
+    return ""; // å¦‚æœè¡Œè¶…å‡ºèŒƒå›´ï¼Œè¿”å›ç©ºå­—ç¬¦ä¸²
+}
+struct PlayerInfo
+{
+    std::string name;
+    int times;
+    int scores;
+};
+
+PlayerInfo parseString(const std::string &str)
+{
+    PlayerInfo player;
+    std::stringstream ss(str);
+    std::string token;
+
+    // è§£æå§“å
+    std::getline(ss, token, ' '); // è¯»å–ç¬¬ä¸€ä¸ª '|'
+    std::getline(ss, token, ' '); // è¯»å–å§“å
+    player.name = token;
+
+    // è§£ææ¬¡æ•°
+    std::getline(ss, token, ' '); // è¯»å– '|'
+    std::getline(ss, token, ' '); // è¯»å–æ¬¡æ•°
+    player.times = std::stoi(token);
+
+    // è§£æåˆ†æ•°
+    std::getline(ss, token, ' '); // è¯»å– '|'
+    std::getline(ss, token, ' '); // è¯»å–åˆ†æ•°
+    player.scores = std::stoi(token);
+
+    return player;
+}
+int parseNumber(const std::string &str)
+{
+    int number = 0;
+    std::stringstream ss(str);
+    std::string token;
+
+    // æŸ¥æ‰¾æ•°å­—éƒ¨åˆ†
+    while (std::getline(ss, token, ':'))
+    {
+        if (token.find("num") != std::string::npos)
+        {
+            // æ‰¾åˆ°äº† "num"ï¼Œæ¥ç€è¯»å–æ•°å­—
+            std::getline(ss, token, ':');
+            number = std::stoi(token);
+            break;
+        }
+    }
+
+    return number;
+}
+#include <iostream>
+#include <regex>
+#include <string>
+int parseMiddleNumber(const std::string& input) {
+    // å®šä¹‰æ­£åˆ™è¡¨è¾¾å¼æ¨¡å¼ï¼ŒåŒ¹é…æ•°å­—
+    std::regex pattern("\\d+");
+
+    // åœ¨è¾“å…¥å­—ç¬¦ä¸²ä¸­æœç´¢åŒ¹é…çš„å†…å®¹
+    std::smatch matches;
+    if (std::regex_search(input, matches, pattern)) {
+        // è¿”å›åŒ¹é…åˆ°çš„ç¬¬ä¸€ä¸ªæ•°å­—
+        return std::stoi(matches[0]);
+    } else {
+        // å¦‚æœæœªæ‰¾åˆ°åŒ¹é…çš„æ•°å­—ï¼Œè¿”å›é»˜è®¤å€¼ -1
+        return -1;
+    }
+}
+void UPDATE_RANK(char *name)
+{
+        cout<<"ok1"<<endl;
+
+    int now_line = find_name(name);
+    char newContent[160];
+
+    if (now_line)
+    {
+            cout<<"ok2"<<endl;
+
+        string str = readTxtLine(filename, now_line);
+        PlayerInfo player = parseString(str);
+        player.scores = totalScore()>player.scores?totalScore():player.scores;
+        sprintf(newContent, "| %s | %d | %d |", player.name.c_str(), player.times, player.scores);
+        overwriteLine(filename, now_line, newContent);
+    }
+    else
+    {
+        cout<<"ok3"<<endl;
+
+        now_line = find_name("<!-- rank -->");
+        string str = readTxtLine(filename, now_line - 1);
+        int have = parseNumber(str);
+        sprintf(newContent, "|%s| %d | %d |", name, 1, totalScore());
+        overwriteLine(filename, now_line + 3 + have, newContent);
+        sprintf(newContent, "<!-- num:%d -->", have + 1);
+        overwriteLine(filename, now_line - 1, newContent);
+    }
+    int score_max_line = find_name("score:");
+    string str = readTxtLine(filename, score_max_line - 2);
+
+    long long int now_max = parseMiddleNumber(str);
+    char str1[50];
+    if (now_max < totalScore())
+    {
+        sprintf(str1, "MAX SCORE: **%lld**", totalScore());
+        overwriteLine(filename, score_max_line - 2, str1);
+    }
+}
+int main(int argc, char *argv[])
+{
+
+    // return 0;
+
     srand(time(NULL));
 
-    if (argc != 2) {
+
+    if (argc != 3)
+    {
         printf("error num %d \n", argv[0]);
         return 1;
     }
-    long long int input = 0; // ½«×Ö·û´®×ª»»ÎªÕûÊı
+    long long int input = 0; // å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºæ•´æ•°
 
-    if (strcmp(argv[1], "NEW") == 0) {
+    if (strcmp(argv[1], "NEW") == 0)
+    {
         input = 5;
-    } else if (strcmp(argv[1], "UP") == 0) {
+    }
+    else if (strcmp(argv[1], "UP") == 0)
+    {
         input = 8;
-    } else if (strcmp(argv[1], "DOWN") == 0) {
+    }
+    else if (strcmp(argv[1], "DOWN") == 0)
+    {
         input = 2;
-    } else if (strcmp(argv[1], "LEFT") == 0) {
+    }
+    else if (strcmp(argv[1], "LEFT") == 0)
+    {
         input = 4;
-    } else if (strcmp(argv[1], "RIGHT") == 0) {
+    }
+    else if (strcmp(argv[1], "RIGHT") == 0)
+    {
         input = 6;
-    } else {
+    }
+    else
+    {
         printf("error num ");
         return 1;
     }
 
-
     const std::string searchText = "<!-- BEGIN CHESS BOARD -->";
 
-    // ²éÕÒÌØ¶¨×Ö·û´®ËùÔÚµÄĞĞºÅ
+    // æŸ¥æ‰¾ç‰¹å®šå­—ç¬¦ä¸²æ‰€åœ¨çš„è¡Œå·
     std::vector<int> lines = findLinesWithText(filename, searchText);
     std::cout << "Lines containing '" << searchText << "': ";
-    for (int line: lines) {
+    for (int line : lines)
+    {
         std::cout << line << " ";
     }
     std::cout << std::endl;
@@ -423,31 +648,36 @@ int main(int argc, char *argv[]) {
     READboard();
 
     bool state = false;
-    switch (input) {
-        case 8:
-            state = moveUp();
-            break;
-        case 2:
-            state = moveDown();
-            break;
-        case 4:
-            state = moveLeft();
-            break;
-        case 6:
-            state = moveRight();
-            break;
-        case 5:
-            initialize();
-            break;
-
+    switch (input)
+    {
+    case 8:
+        state = moveUp();
+        break;
+    case 2:
+        state = moveDown();
+        break;
+    case 4:
+        state = moveLeft();
+        break;
+    case 6:
+        state = moveRight();
+        break;
+    case 5:
+        initialize();
+        break;
     }
-    if (!state && (input == 8 || input == 2 || input == 4 || input == 6) && isGameOver()) {
+    if (!state && (input == 8 || input == 2 || input == 4 || input == 6) && isGameOver())
+    {
         printf("Game Over!\n");
         initialize();
     }
     flashboard();
     char str[50];
-    sprintf(str,"score: **%lld**", totalScore());
-    overwriteLine(filename, start_line-1, str);
+    sprintf(str, "score: **%lld**", totalScore());
+    overwriteLine(filename, start_line - 1, str);
+    char str_find[50];
+    sprintf(str_find," %s ",argv[2]);
+    UPDATE_RANK(str_find);
+
     return 0;
 }

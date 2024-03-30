@@ -14,6 +14,7 @@
 | NEW GAME   | [START NEW GAME](https://github.com/losehu/losehu/issues/new?body=NEW&title=2048)   |
 
 <!-- END CLICK -->
+MAX SCORE: **232**
 
 score: **232**
 <!-- BEGIN CHESS BOARD -->
@@ -27,7 +28,14 @@ score: **232**
 <!-- END CHESS BOARD -->
 
 
-
+## Ranking
+<!-- num:3 -->
+<!-- rank -->
+| player     | times | MAX SCORE |
+|------------|-------|-----------|
+| gablove001 | 39 | 190 |
+| silenty4ng | 8 | 232 |
+| losehu | 3 | 202 |
 
 
 
