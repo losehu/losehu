@@ -20,7 +20,12 @@ jobs:
               repo: context.repo.repo,
               body: '👋 Thanks for playing!Can you give me a star?'
             })
-           
+            github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number:  ${{ github.event.issue.number }},
+              state: 'closed'
+            })
 
             
 
