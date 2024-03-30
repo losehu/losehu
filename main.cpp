@@ -565,7 +565,7 @@ void UPDATE_RANK(char *name)
         string str = readTxtLine(filename, now_line);
         PlayerInfo player = parseString(str);
         player.scores = totalScore()>player.scores?totalScore():player.scores;
-        sprintf(newContent, "| %s | %d | %d |", player.name.c_str(), player.times, player.scores);
+        sprintf(newContent, "| %s | %d | %d |", player.name.c_str(), player.times+1, player.scores);
         overwriteLine(filename, now_line, newContent);
     }
     else
