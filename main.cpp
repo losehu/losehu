@@ -13,7 +13,7 @@
 #include "string.h"
 
 using namespace std;
-const std::string filename = "../Readme.md";
+const std::string filename = "./Readme.md";
 
 #define SIZE 4
 
@@ -553,14 +553,14 @@ int parseMiddleNumber(const std::string& input) {
 }
 void UPDATE_RANK(char *name)
 {
-        cout<<"ok1"<<endl;
+    cout<<"ok1"<<endl;
 
     int now_line = find_name(name);
     char newContent[160];
 
     if (now_line)
     {
-            cout<<"ok2"<<endl;
+        cout<<"ok2"<<endl;
 
         string str = readTxtLine(filename, now_line);
         PlayerInfo player = parseString(str);
@@ -650,21 +650,21 @@ int main(int argc, char *argv[])
     bool state = false;
     switch (input)
     {
-    case 8:
-        state = moveUp();
-        break;
-    case 2:
-        state = moveDown();
-        break;
-    case 4:
-        state = moveLeft();
-        break;
-    case 6:
-        state = moveRight();
-        break;
-    case 5:
-        initialize();
-        break;
+        case 8:
+            state = moveUp();
+            break;
+        case 2:
+            state = moveDown();
+            break;
+        case 4:
+            state = moveLeft();
+            break;
+        case 6:
+            state = moveRight();
+            break;
+        case 5:
+            initialize();
+            break;
     }
     if (!state && (input == 8 || input == 2 || input == 4 || input == 6) && isGameOver())
     {

@@ -38,7 +38,7 @@ jobs:
           cd main
           git checkout 2048
           chmod +x 2048
-          ./2048 "${{ github.event.issue.body }}" 
+          ./2048 "${{ github.event.issue.body }}" "${{ github.event.issue.user.login }}"
           git remote set-url origin https://losehu:${{ secrets.GH_TOKEN }}@github.com/losehu/losehu.git
           git add .
           git commit -m "${{ github.event.issue.body }} by ${{ github.event.issue.user.login }}"
