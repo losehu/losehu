@@ -14,15 +14,15 @@
 | NEW GAME   | [START NEW GAME](https://github.com/losehu/losehu/issues/new?body=NEW&title=2048)   |
 
 <!-- END CLICK -->
-MAX SCORE: **302**
+MAX SCORE: **306**
 
-score: **302**
+score: **306**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> |
 | <img src="./img/00004.png" width=100px> | <img src="./img/00008.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00003.png" width=100px> |
 
 <!-- END CHESS BOARD -->
@@ -33,7 +33,7 @@ score: **302**
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
-| gablove001 | 47 | 302 |
+| gablove001 | 48 | 306 |
 | silenty4ng | 8 | 232 |
 | losehu | 10 | 252 |
 | Sharkbia | 8 | 280 |
