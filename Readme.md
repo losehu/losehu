@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **702**
+score: **4**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00002.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00003.png" width=100px> |
-| <img src="./img/00005.png" width=100px> | <img src="./img/00006.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/00004.png" width=100px> |
-| <img src="./img/00006.png" width=100px> | <img src="./img/00008.png" width=100px> | <img src="./img/00007.png" width=100px> | <img src="./img/00006.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -33,7 +33,7 @@ score: **702**
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
-| gablove001 | 154 | 702 |
+| gablove001 | 155 | 702 |
 | silenty4ng | 8 | 232 |
 | losehu | 38 | 686 |
 | Sharkbia | 8 | 280 |
