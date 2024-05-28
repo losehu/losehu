@@ -16,10 +16,10 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **26**
+score: **28**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
@@ -40,4 +40,4 @@ score: **26**
 | InstantComet | 1 | 690 |
 | daifu-3567 | 1 | 4 |
 | fagci | 1 | 6 |
-| xujipm | 7 | 26 |
+| xujipm | 8 | 28 |
