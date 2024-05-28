@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **18**
+score: **20**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -40,4 +40,4 @@ score: **18**
 | InstantComet | 1 | 690 |
 | daifu-3567 | 1 | 4 |
 | fagci | 1 | 6 |
-| xujipm | 4 | 18 |
+| xujipm | 5 | 20 |
