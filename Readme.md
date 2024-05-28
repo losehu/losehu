@@ -16,10 +16,10 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **8**
+score: **10**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
@@ -29,7 +29,7 @@ score: **8**
 
 
 ## Ranking
-<!-- num:7 -->
+<!-- num:8 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
@@ -40,4 +40,4 @@ score: **8**
 | InstantComet | 1 | 690 |
 | daifu-3567 | 1 | 4 |
 | fagci | 1 | 6 |
-
+| xujipm | 1 | 10 |
