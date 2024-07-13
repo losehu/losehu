@@ -16,12 +16,12 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **58**
+score: **60**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00002.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/00005.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/00002.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
@@ -29,7 +29,7 @@ score: **58**
 
 
 ## Ranking
-<!-- num:45 -->
+<!-- num:46 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
