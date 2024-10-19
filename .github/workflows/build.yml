@@ -1,0 +1,31 @@
+name: Build and Push Executable
+
+on:
+  push:
+    branches:
+      - main  # 将 'main' 替换为你希望触发的分支
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检查出仓库代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 使用 GCC 编译 main.c 文件为 2048 可执行文件
+      - name: Build 2048
+        run: |
+          gcc -o 2048 main.cpp
+
+      # 修改权限、运行可执行文件，并将更改提交到分支
+      - name: Modify and commit
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "${{ github.event.issue.body }} by ${{ github.event.issue.user.login }}"
+          git push origin HEAD:2048  # 将 '2048' 替换为你希望推送的目标分支
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # 使用存储在 GitHub Secrets 中的 token
