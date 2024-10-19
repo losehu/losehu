@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **12**
+score: **14**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -35,7 +35,7 @@ score: **12**
 |------------|-------|-----------|
 | gablove001 | 155 | 702 |
 | silenty4ng | 8 | 232 |
-| losehu | 46 | 686 |
+| losehu | 47 | 686 |
 | Sharkbia | 8 | 280 |
 | InstantComet | 1 | 690 |
 | daifu-3567 | 1 | 4 |
