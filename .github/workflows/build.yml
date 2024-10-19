@@ -19,7 +19,7 @@ jobs:
       # 使用 GCC 编译 main.c 文件为 2048 可执行文件
       - name: Build 2048
         run: |
-          gcc -o 2048 main.cpp
+          g++ main.cpp -o 2048
 
       # 修改权限、运行可执行文件，并将更改提交到分支
       - name: Modify and commit
