@@ -3,7 +3,9 @@ name: Build and Push Executable
 on:
   push:
     branches:
-      - main  # 将 'main' 替换为你希望触发的分支
+      - 2048  # 将 'main' 替换为你希望监听的分支
+  workflow_dispatch:  # 允许手动触发
+
 
 jobs:
   build:
