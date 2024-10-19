@@ -137,6 +137,7 @@ bool moveUp() {
 
     if (!move)
         return false;
+    return move;
 }
 
 // 向下移动
@@ -175,6 +176,8 @@ bool moveDown() {
 
     if (!move)
         return false;
+    return move;
+
 }
 
 // 向左移动
@@ -213,6 +216,8 @@ bool moveLeft() {
 
     if (!move)
         return false;
+    return move;
+
 }
 
 // 向右移动
@@ -252,6 +257,7 @@ bool moveRight() {
 
     if (!move)
         return false;
+    return move;
 }
 
 // 检查游戏是否结束
