@@ -1,3 +1,0 @@
-C:/Users/RUPC/Desktop/github/losehu/cmake-build-debug/CMakeFiles/losehu.dir
-C:/Users/RUPC/Desktop/github/losehu/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/RUPC/Desktop/github/losehu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
