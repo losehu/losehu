@@ -29,7 +29,7 @@ score: **14**
 
 
 ## Ranking
-<!-- num:93 -->
+<!-- num:8 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|

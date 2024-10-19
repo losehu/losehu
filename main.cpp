@@ -1,16 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <time.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <iostream>
-#include <fstream>
-#include <string>
 #include <vector>
-#include "string.h"
 
 using namespace std;
 const std::string filename = "./Readme.md";
@@ -380,13 +375,14 @@ bool overwriteLine(const std::string &filename, int lineNumber, const char *cont
     std::string line;
     std::vector<std::string> lines;
 
+    // 打开文件
     if (!file.is_open())
     {
         std::cerr << "Failed to open file: " << filename << std::endl;
         return false;
     }
 
-    // Read all lines into memory
+    // 读取所有行内容
     while (std::getline(file, line))
     {
         lines.push_back(line);
@@ -394,17 +390,16 @@ bool overwriteLine(const std::string &filename, int lineNumber, const char *cont
 
     file.close();
 
-    // Check if lineNumber is valid
-    if (lineNumber < 1 || lineNumber > lines.size())
+    // 如果指定的行号超出文件当前行数，填充空行
+    if (lineNumber > lines.size())
     {
-        std::cerr << "Line " << lineNumber << " does not exist in the file." << std::endl;
-        return false;
+        lines.resize(lineNumber, "");  // 使用空字符串填充
     }
 
-    // Overwrite the content
+    // 覆盖指定行的内容
     lines[lineNumber - 1] = content;
 
-    // Rewrite the file with updated content
+    // 打开文件，写回修改后的内容
     file.open(filename, std::ios::out | std::ios::trunc);
     if (!file.is_open())
     {
@@ -412,11 +407,13 @@ bool overwriteLine(const std::string &filename, int lineNumber, const char *cont
         return false;
     }
 
+    // 将所有行重新写回文件
     for (const auto &l : lines)
     {
         file << l << std::endl;
     }
 
+    file.close();
     return true;
 }
 
@@ -490,26 +487,30 @@ struct PlayerInfo
     int times;
     int scores;
 };
-
 PlayerInfo parseString(const std::string &str)
 {
     PlayerInfo player;
     std::stringstream ss(str);
     std::string token;
 
-    // 解析姓名
-    std::getline(ss, token, ' '); // 读取第一个 '|'
-    std::getline(ss, token, ' '); // 读取姓名
-    player.name = token;
+    // 解析格式: | 若干空格 name 若干空格 | 若干空格 times 若干空格 | 若干空格 score 若干空格 |
 
-    // 解析次数
-    std::getline(ss, token, ' '); // 读取 '|'
-    std::getline(ss, token, ' '); // 读取次数
+    // 跳过第一个 '|'
+    ss >> std::ws;
+    std::getline(ss, token, '|');
+
+    // 跳过若干空格并读取姓名
+    ss >> std::ws;
+    std::getline(ss, player.name, '|');
+
+    // 跳过若干空格并读取次数
+    ss >> std::ws;
+    std::getline(ss, token, '|');
     player.times = std::stoi(token);
 
-    // 解析分数
-    std::getline(ss, token, ' '); // 读取 '|'
-    std::getline(ss, token, ' '); // 读取分数
+    // 跳过若干空格并读取分数
+    ss >> std::ws;
+    std::getline(ss, token, '|');
     player.scores = std::stoi(token);
 
     return player;
@@ -565,7 +566,7 @@ void UPDATE_RANK(char *name)
         string str = readTxtLine(filename, now_line);
         PlayerInfo player = parseString(str);
         player.scores = totalScore()>player.scores?totalScore():player.scores;
-        sprintf(newContent, "| %s | %d | %d |", player.name.c_str(), player.times+1, player.scores);
+        sprintf(newContent, "| %s | %d | %d |", name, player.times+1, player.scores);
         overwriteLine(filename, now_line, newContent);
     }
     else
@@ -575,7 +576,7 @@ void UPDATE_RANK(char *name)
         now_line = find_name("<!-- rank -->");
         string str = readTxtLine(filename, now_line - 1);
         int have = parseNumber(str);
-        sprintf(newContent, "|%s| %d | %d |", name, 1, totalScore());
+        sprintf(newContent, "| %s | %d | %d |", name, 1, totalScore());
         overwriteLine(filename, now_line + 3 + have, newContent);
         sprintf(newContent, "<!-- num:%d -->", have + 1);
         overwriteLine(filename, now_line - 1, newContent);
