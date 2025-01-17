@@ -16,20 +16,20 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **14**
+score: **16**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00003.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
 
 ## Ranking
-<!-- num:14 -->
+<!-- num:15 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
@@ -47,3 +47,4 @@ score: **14**
 |  huifeideteji  | 1 | 4 |
 |  goodfish-jhy  | 1 | 6 |
 |  byf3332  | 1 | 14 |
+|  harry-haha  | 1 | 16 |
