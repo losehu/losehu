@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **28**
+score: **32**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> |
-|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00004.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00004.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -49,4 +49,4 @@ score: **28**
 |  byf3332  | 1 | 14 |
 |  harry-haha  | 1 | 16 |
 |  everest05454  | 1 | 4 |
-|  FurryCube  | 9 | 28 |
+|  FurryCube  | 10 | 32 |
