@@ -16,13 +16,13 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **12**
+score: **14**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> |
 
 <!-- END CHESS BOARD -->
@@ -49,4 +49,4 @@ score: **12**
 |  byf3332  | 1 | 14 |
 |  harry-haha  | 1 | 16 |
 |  everest05454  | 1 | 4 |
-|  FurryCube  | 4 | 12 |
+|  FurryCube  | 5 | 14 |
