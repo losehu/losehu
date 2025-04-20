@@ -16,12 +16,12 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **108**
+score: **110**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/00004.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00003.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> |
 | <img src="./img/00001.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> |
 | <img src="./img/00001.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
@@ -47,7 +47,7 @@ score: **108**
 |  huifeideteji  | 1 | 4 |
 |  goodfish-jhy  | 1 | 6 |
 |  byf3332  | 1 | 14 |
-|  harry-haha  | 5 | 108 |
+|  harry-haha  | 6 | 110 |
 |  everest05454  | 1 | 4 |
 |  FurryCube  | 27 | 88 |
 |  icoolding  | 1 | 92 |
