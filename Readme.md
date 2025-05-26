@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **380**
+score: **384**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00008.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/00008.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00005.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00003.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00005.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -35,7 +35,7 @@ score: **380**
 |------------|-------|-----------|
 | gablove001 | 155 | 702 |
 | silenty4ng | 8 | 232 |
-|  losehu  | 50 | 686 |
+|  losehu  | 51 | 686 |
 | Sharkbia | 8 | 280 |
 | InstantComet | 1 | 690 |
 | daifu-3567 | 1 | 4 |
