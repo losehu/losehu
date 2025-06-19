@@ -16,20 +16,20 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **384**
+score: **386**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/00008.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00005.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00003.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00005.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/00005.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
 
 ## Ranking
-<!-- num:23 -->
+<!-- num:24 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
@@ -56,3 +56,4 @@ score: **384**
 |  ljq8896  | 6 | 136 |
 |  ACM1966  | 79 | 376 |
 |  bhgl0516  | 1 | 380 |
+|  celestin  | 1 | 386 |
