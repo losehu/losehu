@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **702**
 
-score: **242**
+score: **246**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/00005.png" width=100px> | <img src="./img/00007.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/00004.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00004.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00004.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -59,4 +59,4 @@ score: **242**
 |  celestin  | 2 | 390 |
 |  frank-1225  | 1 | 4 |
 |  yu-ci-520  | 1 | 6 |
-|  FRA7  | 78 | 242 |
+|  FRA7  | 79 | 246 |
