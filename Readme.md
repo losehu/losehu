@@ -14,15 +14,15 @@
 | NEW GAME   | [START NEW GAME](https://github.com/losehu/losehu/issues/new?body=NEW&title=2048)   |
 
 <!-- END CLICK -->
-MAX SCORE: **788**
+MAX SCORE: **792**
 
-score: **788**
+score: **792**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00009.png" width=100px> | <img src="./img/00007.png" width=100px> | <img src="./img/00006.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00009.png" width=100px> | <img src="./img/00007.png" width=100px> | <img src="./img/00007.png" width=100px> | <img src="./img/00001.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00002.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00006.png" width=100px> | <img src="./img/00001.png" width=100px> |
-| <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
@@ -59,4 +59,4 @@ score: **788**
 |  celestin  | 2 | 390 |
 |  frank-1225  | 1 | 4 |
 |  yu-ci-520  | 1 | 6 |
-|  FRA7  | 271 | 788 |
+|  FRA7  | 272 | 792 |
