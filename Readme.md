@@ -16,13 +16,13 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **6**
+score: **4**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> |
-|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
+|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
@@ -58,6 +58,6 @@ score: **6**
 |  bhgl0516  | 1 | 380 |
 |  celestin  | 2 | 390 |
 |  frank-1225  | 1 | 4 |
-|  yu-ci-520  | 1 | 6 |
+|  yu-ci-520  | 2 | 6 |
 |  FRA7  | 276 | 800 |
 |  114514919810  | 1 | 6 |
