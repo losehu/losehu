@@ -16,20 +16,20 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **14**
+score: **18**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
 
 ## Ranking
-<!-- num:31 -->
+<!-- num:32 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
@@ -64,3 +64,4 @@ score: **14**
 |  kndxhz  | 2 | 8 |
 |  clysto  | 2 | 8 |
 |  itszhengkun  | 2 | 14 |
+|  EmonLieu  | 1 | 18 |
