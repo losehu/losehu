@@ -16,10 +16,10 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **18**
+score: **20**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
@@ -64,4 +64,4 @@ score: **18**
 |  kndxhz  | 2 | 8 |
 |  clysto  | 2 | 8 |
 |  itszhengkun  | 2 | 14 |
-|  EmonLieu  | 1 | 18 |
+|  EmonLieu  | 2 | 20 |
