@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **112**
+score: **114**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00003.png" width=100px> |
 | <img src="./img/blank.png" width=100px> | <img src="./img/00006.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00004.png" width=100px> |
-| <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00003.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -65,4 +65,4 @@ score: **112**
 |  clysto  | 2 | 8 |
 |  itszhengkun  | 2 | 14 |
 |  EmonLieu  | 2 | 20 |
-|  Destore2023  | 36 | 112 |
+|  Destore2023  | 37 | 114 |
