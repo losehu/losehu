@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **24**
+score: **26**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00004.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00004.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -66,4 +66,4 @@ score: **24**
 |  itszhengkun  | 2 | 14 |
 |  EmonLieu  | 2 | 20 |
 |  Destore2023  | 47 | 136 |
-|  dogbrooi  | 8 | 24 |
+|  dogbrooi  | 9 | 26 |
