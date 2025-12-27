@@ -16,10 +16,10 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **364**
+score: **366**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00002.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00004.png" width=100px> | <img src="./img/00002.png" width=100px> |
 | <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00008.png" width=100px> | <img src="./img/00005.png" width=100px> |
@@ -69,4 +69,4 @@ score: **364**
 |  dogbrooi  | 30 | 88 |
 |  Kevin99872  | 2 | 96 |
 |  oncehere  | 5 | 16 |
-|  odorajbotoj  | 108 | 364 |
+|  odorajbotoj  | 109 | 366 |
