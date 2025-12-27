@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **190**
+score: **194**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00003.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00001.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00007.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/00002.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/00005.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00007.png" width=100px> | <img src="./img/00003.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -69,4 +69,4 @@ score: **190**
 |  dogbrooi  | 30 | 88 |
 |  Kevin99872  | 2 | 96 |
 |  oncehere  | 5 | 16 |
-|  odorajbotoj  | 55 | 190 |
+|  odorajbotoj  | 56 | 194 |
