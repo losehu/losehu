@@ -16,20 +16,20 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **602**
+score: **4**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/00005.png" width=100px> | <img src="./img/00008.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/00007.png" width=100px> |
-| <img src="./img/00004.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00005.png" width=100px> | <img src="./img/00001.png" width=100px> |
-| <img src="./img/00001.png" width=100px> | <img src="./img/00006.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
 
 ## Ranking
-<!-- num:37 -->
+<!-- num:38 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
@@ -70,3 +70,4 @@ score: **602**
 |  Kevin99872  | 2 | 96 |
 |  oncehere  | 5 | 16 |
 |  odorajbotoj  | 187 | 602 |
+|  LFY2007  | 1 | 4 |
