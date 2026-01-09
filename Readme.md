@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **18**
+score: **20**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
-| <img src="./img/00003.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> |
+| <img src="./img/00003.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00003.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -71,4 +71,4 @@ score: **18**
 |  oncehere  | 5 | 16 |
 |  odorajbotoj  | 187 | 602 |
 |  LFY2007  | 1 | 4 |
-|  hot012  | 4 | 18 |
+|  hot012  | 5 | 20 |
