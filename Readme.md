@@ -16,14 +16,14 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **36**
+score: **38**
 <!-- BEGIN CHESS BOARD -->
 
 | <img src="./img/00004.png" width=100px> | <img src="./img/00003.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
 |-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
 | <img src="./img/00002.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
-| <img src="./img/blank.png" width=100px> | <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/00001.png" width=100px> | <img src="./img/blank.png" width=100px> |
+| <img src="./img/00002.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> | <img src="./img/blank.png" width=100px> |
 
 <!-- END CHESS BOARD -->
 
@@ -54,7 +54,7 @@ score: **36**
 |  LiuAndre05  | 1 | 94 |
 |  zhgggg  | 1 | 96 |
 |  ljq8896  | 6 | 136 |
-|  ACM1966  | 79 | 376 |
+|  ACM1966  | 80 | 376 |
 |  bhgl0516  | 1 | 380 |
 |  celestin  | 2 | 390 |
 |  frank-1225  | 1 | 4 |
