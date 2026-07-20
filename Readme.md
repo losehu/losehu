@@ -16,13 +16,13 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **66**
+score: **70**
 <!-- BEGIN CHESS BOARD -->
 
-<div align="center"><img src="./img/00001.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00002.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"></div>
 <div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
-<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00003.jpg" width="100" height="100" align="top"><img src="./img/00002.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
-<div align="center"><img src="./img/00005.jpg" width="100" height="100" align="top"><img src="./img/00004.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00003.jpg" width="100" height="100" align="top"><img src="./img/00002.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00005.jpg" width="100" height="100" align="top"><img src="./img/00004.jpg" width="100" height="100" align="top"><img src="./img/00002.jpg" width="100" height="100" align="top"></div>
 
 <!-- END CHESS BOARD -->
 
@@ -34,7 +34,7 @@ score: **66**
 |------------|-------|-----------|
 | gablove001 | 155 | 702 |
 | silenty4ng | 8 | 232 |
-|  losehu  | 53 | 686 |
+|  losehu  | 54 | 686 |
 | Sharkbia | 8 | 280 |
 | InstantComet | 1 | 690 |
 | daifu-3567 | 1 | 4 |
