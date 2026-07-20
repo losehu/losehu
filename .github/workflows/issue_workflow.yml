@@ -1,7 +1,12 @@
 name: Issue Workflow
+
 on:
   issues:
     types: [opened]
+
+permissions:
+  contents: write
+  issues: write
 
 jobs:
   process_issue:
@@ -27,17 +32,15 @@ jobs:
               state: 'closed'
             })
 
-      - name: Modify and commit
-        uses: actions/checkout@v2
-        
-      - name: Modify and commit
+      - name: Checkout game
+        uses: actions/checkout@v4
+
+      - name: Build, move, and commit
         run: |
-          chmod +x 2048
-          ./2048 "${{ github.event.issue.body }}" "${{ github.event.issue.user.login }}"
+          g++ -std=c++11 main.cpp -o /tmp/github-2048
+          /tmp/github-2048 "${{ github.event.issue.body }}" "${{ github.event.issue.user.login }}"
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add Readme.md
           git commit -m "${{ github.event.issue.body }} by ${{ github.event.issue.user.login }}"
           git push origin HEAD:2048
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
