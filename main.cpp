@@ -74,31 +74,24 @@ void flashboard() {
         printf("\n");
     }
 
-    // 覆盖第n行的内容为char数组
+    // 用无间隙的 HTML 图片行渲染棋盘，避免 GitHub Markdown 表格的白色单元格背景。
     int now_line = start_line + 2;
     for (int k = 0; k < 4; ++k) {
-        char newContent[170] = "| <img src=\"./img/blank.jpg\" width=100px> | <img src=\"./img/blank.jpg\" width=100px> | <img src=\"./img/blank.jpg\" width=100px> | <img src=\"./img/blank.jpg\" width=100px> |";
-
+        std::string newContent = "<div align=\"center\">";
         for (int l = 0; l < 4; ++l) {
+            char imageName[16];
             if (board[k][l] == 0) {
-                newContent[18 + l * 42] = 'b';
-                newContent[19 + l * 42] = 'l';
-                newContent[20 + l * 42] = 'a';
-                newContent[21 + l * 42] = 'n';
-                newContent[22 + l * 42] = 'k';
+                snprintf(imageName, sizeof(imageName), "blank");
             } else {
-                newContent[18 + l * 42] = '0';
-                newContent[19 + l * 42] = '0';
-                newContent[20 + l * 42] = '0';
-                newContent[21 + l * 42] = '0' + getPowerOfTwo(board[k][l]) / 10;
-                newContent[22 + l * 42] = '0' + getPowerOfTwo(board[k][l]) % 10;
+                snprintf(imageName, sizeof(imageName), "%05lld", getPowerOfTwo(board[k][l]));
             }
+            newContent += "<img src=\"./img/";
+            newContent += imageName;
+            newContent += ".jpg\" width=\"100\" height=\"100\" align=\"top\">";
         }
-        overwriteLine(filename, now_line, newContent);
-        if (k == 0)
-            now_line += 2;
-        else
-            now_line += 1;
+        newContent += "</div>";
+        overwriteLine(filename, now_line, newContent.c_str());
+        now_line += 1;
     }
 }
 
@@ -361,15 +354,19 @@ void READboard() {
     }
     for (int i = 0; i < 4; ++i) {
         std::getline(file, line);
-        if (i == 1)
-            std::getline(file, line);
         cout << line << endl;
+        std::string::size_type searchPosition = 0;
         for (int j = 0; j < 4; j++) {
-            if (line[18 + j * 42] == 'b') {
+            std::string::size_type imagePosition = line.find("./img/", searchPosition);
+            std::string::size_type nameStart = imagePosition + 6;
+            std::string::size_type nameEnd = line.find(".jpg", nameStart);
+            std::string imageName = line.substr(nameStart, nameEnd - nameStart);
+            if (imageName == "blank") {
                 board[i][j] = 0;
             } else {
-                board[i][j] = 2 << (10 * (line[21 + j * 42] - '0') + (line[22 + j * 42] - '0') - 1);
+                board[i][j] = 1LL << std::stoi(imageName);
             }
+            searchPosition = nameEnd + 4;
         }
     }
     for (int i = 0; i < 4; ++i) {

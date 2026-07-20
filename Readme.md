@@ -19,11 +19,10 @@ MAX SCORE: **800**
 score: **64**
 <!-- BEGIN CHESS BOARD -->
 
-| <img src="./img/blank.jpg" width=100px> | <img src="./img/blank.jpg" width=100px> | <img src="./img/blank.jpg" width=100px> | <img src="./img/blank.jpg" width=100px> |
-|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| <img src="./img/blank.jpg" width=100px> | <img src="./img/blank.jpg" width=100px> | <img src="./img/blank.jpg" width=100px> | <img src="./img/blank.jpg" width=100px> |
-| <img src="./img/blank.jpg" width=100px> | <img src="./img/00003.jpg" width=100px> | <img src="./img/00002.jpg" width=100px> | <img src="./img/00001.jpg" width=100px> |
-| <img src="./img/00005.jpg" width=100px> | <img src="./img/00004.jpg" width=100px> | <img src="./img/00001.jpg" width=100px> | <img src="./img/blank.jpg" width=100px> |
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00003.jpg" width="100" height="100" align="top"><img src="./img/00002.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/00005.jpg" width="100" height="100" align="top"><img src="./img/00004.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
 
 <!-- END CHESS BOARD -->
 
