@@ -16,19 +16,19 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **4**
+score: **8**
 <!-- BEGIN CHESS BOARD -->
 
 <div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
 <div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00002.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
 <div align="center"><img src="./img/00001.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
-<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
 
 <!-- END CHESS BOARD -->
 
 
 ## Ranking
-<!-- num:45 -->
+<!-- num:46 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
@@ -77,3 +77,4 @@ score: **4**
 |  Sgombro  | 1 | 60 |
 |  Lonellykiller  | 1 | 62 |
 |  BH-Alex  | 2 | 4 |
+|  NoneButTrue  | 1 | 8 |
