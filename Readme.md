@@ -16,19 +16,19 @@
 <!-- END CLICK -->
 MAX SCORE: **800**
 
-score: **10**
+score: **14**
 <!-- BEGIN CHESS BOARD -->
 
-<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
 <div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
-<div align="center"><img src="./img/00002.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
-<div align="center"><img src="./img/00002.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00002.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
+<div align="center"><img src="./img/00003.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"><img src="./img/00001.jpg" width="100" height="100" align="top"><img src="./img/blank.jpg" width="100" height="100" align="top"></div>
 
 <!-- END CHESS BOARD -->
 
 
 ## Ranking
-<!-- num:46 -->
+<!-- num:47 -->
 <!-- rank -->
 | player     | times | MAX SCORE |
 |------------|-------|-----------|
@@ -78,3 +78,4 @@ score: **10**
 |  Lonellykiller  | 1 | 62 |
 |  BH-Alex  | 2 | 4 |
 |  NoneButTrue  | 1 | 8 |
+|  vincenlai  | 1 | 14 |
